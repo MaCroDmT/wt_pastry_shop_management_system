@@ -1,0 +1,171 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-slideshow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideShow 25s infinite;
+}
+
+@keyframes slideShow {
+  0% {
+    background-image: url("../media/images/reg/1.jpg");
+  }
+  20% {
+    background-image: url("../media/images/reg/2.jpg");
+  }
+  40% {
+    background-image: url("../media/images/reg/3.jpg");
+  }
+  60% {
+    background-image: url("../media/images/reg/4.jpg");
+  }
+  80% {
+    background-image: url("../media/images/reg/5.jpg");
+  }
+  100% {
+    background-image: url("../media/images/reg/1.jpg");
+  }
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(50, 50, 50, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.wave-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 200% 200%;
+  animation: wave 20s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  background: rgba(50, 50, 50, 0.6);
+  color: thistle;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  padding: 12px;
+  background-color: blanchedalmond;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#regis {
+  background: hsl(335, 87%, 54%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#regis:hover {
+  background: hsl(335, 91%, 48%);
+  transform: scale(1.05);
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
