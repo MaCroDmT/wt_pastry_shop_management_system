@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../controller/admin/viewsellController.php');
+require_once('../../control/admin/viewsellController.php');
 $productSales = handleProductSales();
 ?>
 

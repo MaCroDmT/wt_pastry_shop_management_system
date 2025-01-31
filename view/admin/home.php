@@ -48,7 +48,7 @@ if (!isset($_SESSION['name'])) {
             </ul>
         </fieldset>
             <ul>
-            <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+            <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </div>
     </main>

@@ -25,7 +25,7 @@ if (!isset($_SESSION['name'])) {
                 <li><a href="http://localhost/pastryshop/view/product/updateproduct.php">Update Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/product/deleteproduct.php">Delete Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +35,7 @@ if (!isset($_SESSION['name'])) {
             <?php if (isset($_SESSION['error'])): ?>
                 <p class="error"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
             <?php endif; ?>
-            <form id="addProductForm" action="../../controller/product/addproductController.php" method="post">
+            <form id="addProductForm" action="../../control/product/addproductController.php" method="post">
                 <fieldset>
                     <legend>New Product Registration</legend>
                     <table>

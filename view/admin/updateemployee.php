@@ -1,5 +1,5 @@
 <?php
-require_once('../../controller/admin/updateemployeeController.php');
+require_once('../../control/admin/updateemployeeController.php');
 
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 $sal = isset($_GET['salary']) ? $_GET['salary'] : '';
@@ -54,7 +54,7 @@ $pos = isset($_GET['pos']) ? $_GET['pos'] : '';
 
     <h2>Edit Salary and Position</h2>
     <fieldset>
-        <form action="../../controller/admin/updateemployeeController.php" method="POST">
+        <form action="../../control/admin/updateemployeeController.php" method="POST">
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
 
             <p>

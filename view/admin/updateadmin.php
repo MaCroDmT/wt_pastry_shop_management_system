@@ -4,7 +4,7 @@ if (!isset($_SESSION['name'])) {
     header("Location: ../login.php");
     exit();
 }
-require_once('../../controller/admin/viewadminsController.php');
+require_once('../../control/admin/viewadminsController.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ require_once('../../controller/admin/viewadminsController.php');
                 <li><a href="http://localhost/pastryshop/view/admin/updateadmin.php">Update Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/deleteadmin.php">Delete Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -81,7 +81,7 @@ require_once('../../controller/admin/viewadminsController.php');
         <div class="form-container">
             <h2>Edit Admin</h2>
             <fieldset>
-                <form id="updateAdminForm" action="../../controller/admin/updateadminController.php" method="POST">
+                <form id="updateAdminForm" action="../../control/admin/updateadminController.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
                     <p>
                         <label for="name">Name:</label>

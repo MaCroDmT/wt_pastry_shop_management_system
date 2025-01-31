@@ -49,7 +49,7 @@
         </select>
 
         <div id="customer-form" class="form-content" style="display: none">
-            <form method="post" action="../controller/registrationController.php">
+            <form method="post" action="../control/registrationController.php">
                 <h2>Customer Registration</h2>
                 <label>Name: <input type="text" name="c_name" id="c_name" /></label><br />
                 <label>Age: <input type="number" name="c_age" id="c_age" /></label><br />
@@ -72,7 +72,7 @@
         </div>
 
         <div id="employee-form" class="form-content" style="display: none">
-            <form method="post" action="../controller/registrationController.php">
+            <form method="post" action="../control/registrationController.php">
                 <h2>Employee Registration</h2>
                 <label>Name: <input type="text" name="e_name" id="e_name" /></label><br />
                 <label>Phone: <input type="text" name="e_phone" id="e_phone" /></label><br />
@@ -87,7 +87,7 @@
         </div>
 
         <div id="admin-form" class="form-content" style="display: none">
-            <form method="post" action="../controller/registrationController.php">
+            <form method="post" action="../control/registrationController.php">
                 <h2>Admin Registration</h2>
                 <label>Name: <input type="text" name="a_name" id="a_name" /></label><br />
                 <label>Phone: <input type="text" name="a_phone" id="a_phone" /></label><br />

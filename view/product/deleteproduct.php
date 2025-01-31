@@ -7,7 +7,7 @@ if (!isset($_SESSION['name'])) {
 ?>
 
 <?php
-require_once('../../controller/product/viewproductsController.php');
+require_once('../../control/product/viewproductsController.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@ require_once('../../controller/product/viewproductsController.php');
                 <li><a href="http://localhost/pastryshop/view/product/addproduct.php">Add Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/product/updateproduct.php">Update Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +55,7 @@ require_once('../../controller/product/viewproductsController.php');
                                 <td><?php echo htmlspecialchars($product['production']); ?></td>
                                 <td><?php echo htmlspecialchars($product['expire']); ?></td>
                                 <td>
-                                    <a class="button" href="../../controller/product/deleteproductController.php?id=<?php echo $product['id']; ?>">Delete</a>
+                                    <a class="button" href="../../control/product/deleteproductController.php?id=<?php echo $product['id']; ?>">Delete</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

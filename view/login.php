@@ -11,7 +11,7 @@
 
     <main>
       <div class="login-container">
-        <form action="../controller/loginController.php" method="post">
+        <form action="../control/loginController.php" method="post">
           <h2>Login</h2>
           <label for="role">Role :</label>
           <select name="role" id="role">

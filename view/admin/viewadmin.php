@@ -7,7 +7,7 @@ if (!isset($_SESSION['name'])) {
 ?>
 
 <?php
-require_once('../../controller/admin/viewadminsController.php');
+require_once('../../control/admin/viewadminsController.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ require_once('../../controller/admin/viewadminsController.php');
                 <li><a href="http://localhost/pastryshop/view/admin/updateadmin.php">Update Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/deleteadmin.php">Delete Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>

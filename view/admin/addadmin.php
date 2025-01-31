@@ -25,7 +25,7 @@ if (!isset($_SESSION['name'])) {
                 <li><a href="http://localhost/pastryshop/view/admin/updateadmin.php">Update Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/deleteadmin.php">Delete Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +36,7 @@ if (!isset($_SESSION['name'])) {
                 <p class="error"><?php echo $_SESSION['error']; 
                 unset($_SESSION['error']); ?></p>
             <?php endif; ?>
-            <form id="addAdminForm" action="../../controller/admin/addadminController.php" method="post">
+            <form id="addAdminForm" action="../../control/admin/addadminController.php" method="post">
                 <fieldset>
                     <legend>New Admin Registration</legend>
                     <table>

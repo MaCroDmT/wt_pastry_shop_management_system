@@ -6,7 +6,7 @@ if (!isset($_SESSION['name'])) {
 }
 ?>
 <?php
-require_once('../../controller/admin/viewadminsController.php');
+require_once('../../control/admin/viewadminsController.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ require_once('../../controller/admin/viewadminsController.php');
                 <li><a href="http://localhost/pastryshop/view/admin/updateadmin.php">Update Admin</a></li>
 
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -54,7 +54,7 @@ require_once('../../controller/admin/viewadminsController.php');
                     echo "<td>" . $admin['email'] . "</td>";
                     echo "<td>" . $admin['bio'] . "</td>";
                     echo "<td>" . $admin['ref'] . "</td>";
-                    echo "<td><a href='../../controller/admin/deleteadminController.php?id=" . $admin['id'] . "'>Delete</a></td>";
+                    echo "<td><a href='../../control/admin/deleteadminController.php?id=" . $admin['id'] . "'>Delete</a></td>";
                     echo "</tr>";
                 }
             } else {

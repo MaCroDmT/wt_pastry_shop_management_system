@@ -23,7 +23,7 @@ if (!isset($_SESSION['name'])) {
                 <li><a href="http://localhost/pastryshop/view/admin/updateadmin.php">Update Admin</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/deleteadmin.php">Delete Admin</a></li>
         
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>

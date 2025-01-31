@@ -4,7 +4,7 @@ if (!isset($_SESSION['name'])) {
     header("Location: ../login.php");
     exit();
 }
-require_once('../../controller/product/viewproductsController.php');
+require_once('../../control/product/viewproductsController.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ require_once('../../controller/product/viewproductsController.php');
                 <li><a href="http://localhost/pastryshop/view/product/updateproduct.php">Update Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/product/deleteproduct.php">Delete Product</a></li>
                 <li><a href="http://localhost/pastryshop/view/admin/adminprofile.php">Admin Profile</a></li>
-                <li><a href="http://localhost/pastryshop/controller/logoutController.php">Logout</a></li>
+                <li><a href="http://localhost/pastryshop/control/logoutController.php">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -80,7 +80,7 @@ require_once('../../controller/product/viewproductsController.php');
         <div class="form-container">
             <h2>Edit Product</h2>
             <fieldset>
-                <form id="updateProductForm" action="../../controller/product/updateproductController.php" method="POST">
+                <form id="updateProductForm" action="../../control/product/updateproductController.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
                     <p>
                         <label for="name">Name:</label>
