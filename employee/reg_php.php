@@ -4,7 +4,7 @@ require('db.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $errors = [];
 
-  // Collect form data
+
   $u_name = $_POST['u_name'];
   $password = $_POST['pass'];
   $confirm_pass = $_POST['confirm_pass'];
