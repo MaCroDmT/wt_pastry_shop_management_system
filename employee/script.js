@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
   const inputs = form.querySelectorAll("input");
   
-  // প্রতিটি ইনপুট ফিল্ডে ক্লিক করলেই ভ্যালিডেশন চালু হবে
+ 
   inputs.forEach((input) => {
     input.addEventListener("click", function () {
       validateField(input);
